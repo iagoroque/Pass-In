@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 160
+SET FILES CHECK 13720
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -58,3 +58,6 @@ INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1
 INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',-303457174,'SA','2024-04-02 16:20:58.096555',13,'1')
 INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',-1001714836,'SA','2024-04-02 16:20:58.110759',2,'1')
 INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',553901455,'SA','2024-04-02 16:20:58.123376',2,'1')
+INSERT INTO EVENTS VALUES('1e0d4e57-48ca-479f-a777-7212d436b2fb','Teste 1','Primeiro Teste com o Insomnia','teste-1',500)
+INSERT INTO EVENTS VALUES('4e5d3683-8fcc-490b-a23c-87d8d5d4267e','Testes 1','Primeiro Teste com o Insomnia','testes-1',500)
+INSERT INTO EVENTS VALUES('e86f7e54-3bfd-4843-af3d-31cd9df18bf7','Testedds 1','Primeiro Teste com o Insomnia','testedds-1',500)
