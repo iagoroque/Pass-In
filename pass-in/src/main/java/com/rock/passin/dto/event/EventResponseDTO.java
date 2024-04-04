@@ -2,6 +2,9 @@ package com.rock.passin.dto.event;
 
 import com.rock.passin.domain.event.Event;
 
+import lombok.Getter;
+
+@Getter
 public class EventResponseDTO {
     
     EventDetailDTO event;
